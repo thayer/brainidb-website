@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- 
+PLEASE NOTE:
+This page was created for use with Adobe Contribute. However, the page layout is not locked. 
+
+Editing anywhere outside of the area notated as EDITABLE allows for the risk of breaking the page layout.
+
+It is not reccomended to do so. Should editing be required, please backup this file before doing so.
+
+www.mediumbold.com
+--> 
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<link rel="stylesheet" type="text/css" href="/templates/css/global_style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/local_style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/templates/css/print_style.css" media="print" />
+<title>Project Page</title>
+<script src="AC_ActiveX.js" type="text/javascript"></script>
+<script src="AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="header">
+	<div id="header-print"><img id="thayer-logo-print" src="/templates/images/thayerlogo_print.jpg" width="150" height="34" alt="Thayer School of Engineering At Dartmouth logo"  /></div>
+	<div id="utilitynav">
+		<div id="stripe"><a href="http://www.dartmouth.edu/">Dartmouth Home</a> &nbsp;|<a href="http://dms.dartmouth.edu"></a>&nbsp; <a href="http://engineering.dartmouth.edu">Thayer Home</a> |<a href="http://dhmc.org"> Dartmouth medical school home | DHMC home</a></div>
+	</div>
+</div>
+
+<div id="mastercontainer">
+	<div id="navigation">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li class="current_page"><a href="research_projects.html" class="current_page">Research Projects</a></li>
+			<li class="subnav">
+				<a href="fluorescence_guided_resection.html">Fluorescence Guided Resection </a>				
+				<a href="project_b.html">Brain Deformation Modeling </a>			</li>
+			<li><a href="people.html">People</a></li>
+			<li><a href="publications.html">Publications</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="resources.html">Resources</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<div id="search">
+			<div style="clear:both;"></div>
+	  </div>
+	  
+	  	<div id="related">
+			<h3>Related Links</h3>
+			<ul style="margin-bottom: 0;">
+				<li><a href="resources.html">Downloads</a>	</li>			
+				<li><a href="resources.html">Grant Information</a> </li>
+				<li><a href="publications.html">Publications</a> </li>
+				<li><a href="gallery.html">Photo Gallery</a></li>			
+		  </ul>
+		</div>
+	
+		<div style="clear:both;"></div>
+	</div>
+	
+	<div id="content_positioning">
+<!-- EDITABLE: This is the content of the page, standard editing will not break the layout --> 
+      <div id="content">
+          <h1>Fluorescence Guided Resection</h1>
+          <blockquote>
+            <h2 align="center"><a href="fluorescence_guided_resection_background.html">Background</a></h2>
+        </blockquote>
+          <h2 align="center">What is the problem ?</h2>
+          <p>The problem we are working towards addressing in our research is the problem of brain tumors. Brain tumors account for ~2% of all cancer deaths in the United States. Specifically, brain tumors known as gliomas, because they originate from glial cells in the brain, account for ~ 70-80% of all brain tumors. Gliomas can be categorized based on their histopathological features by specific grading criteria&ndash; the World Health Organization (that is, WHO) classification of tumors. Tumors can be classified as WHO grade I to WHO  grade IV, such that tumor grading dictates choice of therapy and predicts prognosis. WHO I-II gliomas are known as low grade gliomas; although variable, prognosis for these tumors is good given adequate intervention (surgical, chemo and/or radiation). WHO III-IV gliomas are known as high grade gliomas, and prognosis for these tumors is generally dismal. Glioblastoma multiforme (GBM), classified as a  WHO IV tumor and the most malignant of gliomas, accounting for ~ 60% of gliomas, displaying a median survival from time of diagnosis of ~12 months. Current treatment involves a combination of surgery, chemotherapy and radiation.</p>
+            <h2 align="center">What is the current surgical solution?</h2>
+            <p style="margin-bottom: 0;"><img src="images/pre_post_MRI_000.jpg" width="450" height="252" align="left" />Surgical intervention for brain tumors involves debulking and resection of tumor, meanwhile achieving a balance between resection of tumor tissue and preservation of normal functioning brain. Evidence suggests that maximizing the extent of resection, meanwhile preserving eloquent and normal functioning brain, is the optimal surgical solution. Such that, maximizing extent of resection for brain tumors provides patients both a quality of life and survival benefit, with improved survival benefits in lower grade disease compared to higher grade disease. </p>
+<p style="margin-top: 0;"><strong>Figure. Pre- (left) and post-operative (right) T1-weighted MR axial images of a patient with a diagnosis of GBM (WHO IV). The pre-operative image shows a large mostly non-enahncing frontal lobe tumor mass, while the post-operative image shows a complete resection of the bulk of tumor</strong></p>
+<h2 align="center" style="margin-bottom: 0;">What are conventional approaches to improve tumor resection?</h2>
+          <h3 align="left" style="margin-top: 0; margin-bottom: 0;"><strong>Image-Guidance </strong></h3>
+          <p style="margin-top: 0;">Conventional neurosurgical resection of tumors usually involves the use of image guidance. Briefly, image guidance involves use of a navigation system, unto which the surgeon loads pre-operative images of the patient, and an instrument that is detected by or co-registered with the navigation system. Thus, the navigation system is able to then relate the location of the instrument, e.g., the focal point of the surgical microscope, with its location in image space.</p>
+          <p>The concept is analogous to a GPS system, where the navigation system is like a satellite, which detects where the surgeon is in the surgical field. the pre-operative images are analogous to the map the GPS uses, and what the surgeon actually sees is equivalent to the roads the drive actually drives on.</p>
+          <p style="margin-bottom: 0;">One can image a limitation with this technology. As the surgery progresses, the brain shifts and deforms, thus, the accuracy of the pre-operative images relative to the deformed and shifted brain is significantly degraded, i.e., the navigational accuracy is compromised. This is analogous to using a GPS system with a map from 15 years ago in a large, metropolitan area.</p>
+          <h3 style="margin-top: 0; margin-bottom: 0;"><strong>Intraoperative Imaging </strong></h3>
+          <p style="margin-top: 0;">To address the limitations and issues of brain deformation and loss of accuracy in image guidance, significant efforts have been undertaken in providing the surgeon with updated images. One major approach has been the use of intraoperative imaging, which involves having a dedicated OR with an MRI, for example. The idea and application is great, since the surgeon can stop during surgery, acquire an image, load unto the navigation system, and thus have an updated image halfway through  surgery.</p>
+          <p style="margin-bottom: 0;">As one might imagine, there are limitations with this approach. Costs can be large, it requires specialized personnel, the feedback is not in real time, and probably the biggest problem is the significant disruption to the flow of surgery &ndash; with sometimes up to 30 minutes of waiting time required to obtain an MR image and resume resection.</p>
+          <h3 style="margin-top: 0; margin-bottom: 0;"><strong>Computational Modeling of Brain Deformation </strong></h3>
+          <p style="margin-top: 0;">One other approach in the research world to address this issue of loss of accuracy, is the use of computational modeling to update the pre-operative MR. Briefly, quick, non-disruptive intraoperative data like stereovision or 3D US is acquired. This data then provides the necessary information for a biomechanical computational model of the brain to estimate the deformation that has occurred. This information is used to deform or warp the pre-operative MR images, and provide the surgeon with a new and updated MR image. Limitations still exist, which include lack of real time feedback, and more importantly, the current lack of a way to validate whether the model is providing the &ldquo;accurate&rdquo; anatomical update. The <strong>Brain Research Group @ Dartmouth </strong>has also been working on addressing this limitations and developing this modeling approach. Please visit the following <a href="project_b.html">link</a> for more information on our work with this approach. </p>
+          <h2 align="center" style="margin-bottom: 0;">What is fluorescence-guided neurosurgery?</h2>
+          <p align="justify" style="margin-top: 0; margin-bottom: 0;">Fluorescence guided resection (FGR) is a promising new approach that has been gaining ground and interest in neurosurgery for the resection of brain tumors, as it is able to provide the surgeon with real-time intraoperative feedback regarding the surgical field using fluorescent properties of tissue. The approach was pioneered by Dr. Walter Stummer in Germany, with results showing how FGR leads to higher rates of complete resection in GBMs. </p>
+          <h3 align="justify" style="margin-top: 0; margin-bottom: 0;"><strong>Basic Concept </strong></h3>
+          <p align="justify" style="margin-top: 0; margin-bottom: 0;"><img src="images/Basic_Concept_FGR_000.jpg" width="600" height="358" align="left" />The basic concept of fluorescence guided resection is the following:</p>
+          <p align="justify" style="margin-top: 0; margin-bottom: 0;">1. The patient receives a drug prior to surgery</p>
+          <p align="justify" style="margin-top: 0; margin-bottom: 0;">2. The drug is then taken up by the tumor, which leads to a selective accumulation of a fluorescent compound.</p>
+          <p align="justify" style="margin-top: 0; margin-bottom: 0;">3. Appropriate fluorescence detection technologies are then used by the surgeon to be able to visualize and detect fluorescence arising  from the fluorescent compound.</p>
+          <p align="justify" style="margin-top: 0;">4. The surgeon is then able to distinguish normal from tumor, since tumor will significantly accumulate the fluorescent compound.</p>
+          <p align="justify">In the image shown to the left, under appropriate blue light excitation, tissue which has significantly accumulated the fluorescent biomarker, protoporphyrin IX, emits a strong red fluorescence as observed through a fluorescence imaging microscope, whereas surrounding tissue does not display any visible red fluorescence. With the fluorescent contrast provided by this biomarker, the surgeon is then able to resection tissue in real-time. </p>
+          <h3 align="justify" style="margin-bottom: 0;"><strong>Protoporphyrin IX and the Heme Biosynthetic Pathway </strong></h3>
+          <p align="justify" style="margin-top: 0;"><img src="http://upload.wikimedia.org/wikipedia/commons/a/a9/Heme_synthesis.png" width="584" height="318" align="left" />The   cells in the human body have a naturally occurring biochemical pathway &ndash; the heme biosynthetic pathway. The the end product of this pathway is heme, which our bodies need for transport of oxygen and proper physiological functioning. When a patient receives an exogenous dose of 5-aminolevulinic acid (that is, ALA), cells bypass the rate limiting step which is formation of this substrate. This leads to ramping up of the heme biosynthetic pathway and overproduction of the downstream product, protoporphyrin IX, (that is, PpIX). Accumulation of PpIX is such that tumors accumulate PpIX in significantly greater amounts than normal tissue, which allows for sufficient fluorescence contrast between normal and tumor. The factors impacting such selective accumulation are numerous, and no consensus still exists as to the exact reasons, but contributing factors include delivery of ALA, number of mitochondria, oxygen levels, and cellular growth, among others.</p>
+          <p align="justify"><img src="images/PpIX_Spectra_000.jpg" width="450" height="248" align="right" />PpIX is a fluorescent compound, and as such it has associated absorption and emission spectra. PpIX displays an excitation maxima in the blue region at 400 nm and a few more smaller excitation peaks at ~ 50 nm intervals, and two emission maxima, a larger one in the red region at 635 nm and a smaller one in the near-infrared region at 710 nm. In our work we are using both excitation at 400 nm and 635 nm and the associated emissions at 600nm +.</p>
+<p>&nbsp;</p>
+<h3 align="justify" style="margin-bottom: 0;"><strong>Subjective Visible Fluorescence </strong></h3>
+<p align="justify" style="margin-top: 0;">The current <em>state-of-the-art </em> in fluorescence guided surgery, with the two major commercial distributors being Zeiss and Leica, uses a modified surgical microscope. For example, the Zeiss surgical microscope shown to the left, is modified for fluorescence imaging, specifically, PpIX fluorescence imaging. The microscope includes an integrated blue light source at 400-410 nm and appropriate long pass filters to collect the emitted fluorescence from 620 -710nm. Switching from standard white light mode to blue mode is seemless, with a simple press of a button that changes from white light to blue light mode in  ~1 second.</p>
+          <p align="center" style="margin-bottom: 0;">
+  <script type="text/javascript">
+AC_AX_RunContent( 'classid','clsid:02bf25d5-8c17-4b23-bc80-d3488abddc6b','codebase','http://www.apple.com/qtactivex/qtplugin.cab','width','320','height','256','border','0','align','baseline','src','videos/FGRCLIP.mov','autoplay','false','controller','true','scale','aspect','bgcolor','white','pluginspage','http://www.apple.com/quicktime/download/' ); //end AC code
+</script><noscript><object classid="clsid:02bf25d5-8c17-4b23-bc80-d3488abddc6b" codebase="http://www.apple.com/qtactivex/qtplugin.cab" width="320" height="256" border="0" align="baseline">
+    <param name="src"         value="videos/FGRCLIP.mov" />
+    <param name="autoplay"    value="false" />
+    <param name="controller"  value="true" />
+    <param name="scale"       value="aspect" />
+    <param name="bgcolor"     value="white" />
+    <param name="pluginspage" value="http://www.apple.com/quicktime/download/" />
+    <embed width="320" height="256" border="0" align="baseline" src="videos/FGRCLIP.mov" autoplay="false" controller ="true" scale="aspect" bgcolor="white" pluginspage="http://www.apple.com/quicktime/download/"> </embed>
+  </object></noscript>
+</p>
+          <p align="justify" style="margin-top: 0;"><strong>Video. Video clip of a tumor surgery with Dr. David W. Roberts, Principal Investigator of our R01 NIH funded project on fluorescence guided resection. In this video clip, Dr. Roberts  starts operating under white light mode, and then decides to switch to blue, fluorescence mode. He presses a button, and a change from white light to blue light illumination occurs. He then continues with his procedure, resecting and removing tissue. Here one can see how he resects tissue that displays red, visible fluorescence.</strong></p>
+          <p align="justify"> FGR can be highly intuitive and powerful, with clinical studies  confirming the utility of this technology. For example, in a study published in 2006 by Stummer and colleagues in the <em>Lancet </em>on ~270 patients with GBM undergoing fluorescence guided surgery, they showed that FGR increased the rate of complete resection, as determined by post-operative contrast enhancement on T1-weighted MR imaging, compared to standard white light resection. FGR showed complete resection rates of ~60% and white light guided resection with rates of ~30%. Subsequent repartitioning of the data into patients undergoing incomplete resection compared to those undergoing complete resection, the authors observed that complete resection provided both a significant quality of life and survival benefit to patients. In summary, FGR provides an intuitive surgical guidance tool for real time intraoperative feedback with associated promising clinical results.</p>
+<h3 align="justify" style="margin-bottom: 0;"><strong>References</strong></h3>
+<p align="justify" style="margin-top: 0; margin-bottom: 0;"><em>Heme Biosynthetic Pathway Image</em>. http://upload.wikimedia.org/wikipedia/commons/a/a9/Heme_synthesis.png</p>
+      </div>
+        <!-- END EDITABLE: --> 
+  </div>
+	<div style="clear:both"></div>
+  <p style="margin-bottom: 0;">&nbsp;</p>
+	<p style="margin-top: 0; margin-bottom: 0;"><br />
+  </p>
+</div>
+
+
+<div id="footer">
+	<div style="float:left;">
+		&copy; 2011 Trustees of Dartmouth College
+     	<br />
+		<a href="http://engineering.dartmouth.edu/about/directions.html">Maps &amp; Directions</a>	</div>
+	<div style="float:right;text-align:right;">
+		<b>Thayer School of Engineering at Dartmouth</b><br />
+		8000 Cummings Hall, Hanover, NH 03755-8000<br />
+		Phone: 603-646-2230, Fax: 603-646-3856	</div>
+</div>
+</body>
+</html>

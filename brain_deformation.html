@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- 
+PLEASE NOTE:
+This page was created for use with Adobe Contribute. However, the page layout is not locked. 
+
+Editing anywhere outside of the area notated as EDITABLE allows for the risk of breaking the page layout.
+
+It is not reccomended to do so. Should editing be required, please backup this file before doing so.
+
+www.mediumbold.com
+--> 
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="/templates/css/global_style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/local_style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/templates/css/print_style.css" media="print" />
+<title>Estimation of Intraoperative Brain Deformation</title>
+<script src="AC_ActiveX.js" type="text/javascript"></script>
+<script src="AC_RunActiveContent.js" type="text/javascript"></script>
+<style type="text/css">
+<!--
+.style1 {color: #000000}
+.style2 {color: #000000; font-weight: bold; }
+-->
+</style>
+</head>
+
+<body>
+<div id="header">
+	<div id="header-print"><img id="thayer-logo-print" src="/templates/images/thayerlogo_print.jpg" width="150" height="34" alt="Thayer School of Engineering At Dartmouth logo"  /></div>
+	<div id="utilitynav">
+		<div id="stripe">
+			<a href="http://www.dartmouth.edu/">Dartmouth Home</a> &nbsp;|&nbsp; <a href="http://engineering.dartmouth.edu/">Thayer Home</a>		
+		</div>
+	</div>
+</div>
+
+<div id="mastercontainer">
+	<div id="navigation">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li class="current_page"><a href="research_projects.html" class="current_page">Research Projects</a></li>
+			<li class="subnav"><a href="fluorescence_guided_resection.html">Fluorescence Guided Resection </a> <a href="brain_deformation.html">Brain Deformation Modeling </a></li>
+			<li><a href="people.html">People</a></li>
+			<li><a href="publications.html">Publications</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="resources.html">Resources</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<div id="search">
+			<div style="clear:both;"></div>
+	  </div>
+	  
+	  <div id="related">
+			<h3>Related Links</h3>
+			<ul style="margin-bottom: 0;"><li><a href="resources.html">Grant Information</a> </li>
+				<li><a href="publications.html">Publications</a> </li>
+				<li><a href="gallery.html">Photo Gallery</a></li>			
+		</ul>
+	  </div>
+	
+		<div style="clear:both;"></div>
+  </div>
+	
+  <div id="content_positioning">
+	  <h1>Estimation of Intraoperative Brain Deformation </h1>
+	  <p style="margin-bottom: 0;">&nbsp;</p>
+	  <p style="margin-top: 0;"><span class="style1" style="margin-top: 0; margin-bottom: 0;">Image-guided neuronavigation using preoperative images has become the standard-of-care in many open cranial surgeries. Brain shift is the single most important factor that degrades registration accuracy during surgery. Intraoperative imaging techniques are important for brain shift compensation. However, they alone are impractical for broad clinical acceptance due to high capital cost and intrusion on surgical workflow or insufficient to provide full-field image data for neuronavigation. Biomechanical models are becoming increasingly attractive for estimating brain deformation intraoperatively because they offer whole-brain displacement fields from which to generate model-updated MR images for subsequent guidance, and are low in cost. </span></p>
+	  <p style="margin-bottom: 0;">&nbsp;</p>
+	  <h2 align="center" style="margin-top: 0;">Model-based Brain shift Compensation </h2>
+<p style="margin-bottom: 0;"><img src="images/illustrationmodelcompensation.jpg" width="400" height="167" align="left" /></p>
+<p class="style1" style="margin-top: 0; margin-bottom: 0;">Biomechanical models incorporate specific loading and boundary conditions in the OR and estimate whole-brain deformation. Because brain shift during surgery is seemingly unpredictable and usually complex, incorporating displacements measured intraoperatively is important to ensure sufficient accuracy in model computation. A typical schematic of model-based brain shift compensation is illustrated in Fig. 1, showing the patient's head and intraoperative images (e.g., iUS, iSV, and iFI) are continuously registered by a common tracking system. The resulting displacement data are often sparse and are assimilated into a subject-specific biomechanical model to estimate the whole-brain displacement field based on which an updated MR volume is generated for subsequent neuronaviga-tion.</p>
+	  <p class="style1" style="margin-top: 0;"><strong>Fig. 1.   Illustration of model-based brain shift compensation. The patient's head and intraopera-tive images (e.g., iUS, iSV, and iFI) are continuously monitored using a common tracking sys-tem. The resulting sparse displacement data are assimilated into a biomechanical model to pro-duce whole-brain deformation from which an updated MR volume is generated for subsequent neuronavigation. </strong></p>
+    <p class="style1">Our group has developed a data-guided compensation strategy to maintain image registration accuracy within the operative field. Because model solution is guided by intraoperative motion measurements, the reliance on model prediction is significantly reduced. Figure 2 illustrates a typical brain deformation field estimated by an inversion data assimilation scheme. </p>
+	  <p class="style2"><img src="images/typicalbraindeffield.jpg" width="300" height="150" align="left" /></p>
+	  <p class="style2">Fig. 2.  Typical brain deformation field estimated by the inversion data assimilation scheme us-ing the brain-skull contact boundary conditions that allow the brain parenchyma to move towards or away from the skull. Thick yellow lines: cross-section of cortical surface acquired from co-registered iSV; Solid/dashed white lines: cross-sections of model-updated brain surface; Thin dashed white lines: skull inner-surface. </p>
+	  <p style="margin-bottom: 0;">&nbsp;</p>
+	  <h2 align="center" style="margin-top: 0; margin-bottom: 0;">Intraoperative Sparse Displacement Data </h2>
+	  <h3 align="left" style="margin-top: 0;"><strong>Sparse Data from 2-D iUS </strong></h3>
+	  <p style="margin-bottom: 0;"><img src="images/dispmap.jpg" width="303" height="122" align="left" /></p>
+	  <p class="style1" style="margin-top: 0; margin-bottom: 0;">Measuring parenchymal displacements with iUS is conceptually straightforward because features of interest are captured with a single imaging modality and displacement mapping is essentially a registration to match features (e.g., tumor) at different points in time. With 2D iUS, however, a direct intramodality registration may not be possible between two arbitrary acquisitions because of limited sampling and gaps between image planes. An indirect approach can then be used to match features in 2D iUS acquired at two surgical stages using pMR as a reference. Fig. 3 shows displacement field before and after dural opening. </p>
+	  <p class="style2" style="margin-top: 0;">Fig. 3.  Displacement map generated by applying a transformation matrix on the triangulated tu-mor boundary surface nodes. </p>
+	  <h3 align="left"><strong>Sparse Data from Volumetric True 3-D iUS </strong></h3>
+	  <p style="margin-bottom: 0;"><img src="images/3dus.jpg" width="345" height="254" align="left" /></p>
+	  <p class="style1" style="margin-top: 0;">With true 3D iUS image volumes, direct intramodality registrations can be used to extract feature displacement maps because of the much larger translational and rotational capture ranges. Similarly with 2D iUS, a &quot;last-known&quot; correct registration is first established between 3DUS and pMR before dural opening in order to collectively correct any misalignment between tumor (and/or other feature) boundaries due to errors in patient registration and US transducer calibration. This registration is important because it defines the spatial transformation required to transform sparse displacement data from the 3D iUS image space into the pMR image space, as illustrated in Fig. 4.</p>
+	  <p style="margin-bottom: 0;">&nbsp;</p>
+	  <p class="style2" style="margin-top: 0;">Fig. 4.  Overlays of 3D iUS before (red) and after (green) dural opening using transforms obtained from the optical tracking (a) or rigid body re-registration (b). Feature alignment was significantly improved after B-Spline nonrigid registration (c), suggesting the effectiveness of the registration technique in capturing feature displacement. The resulting parenchymal feature displacement vectors are shown in (d).</p>
+	  <h3 align="left"><strong>Intraoperative Stereovision </strong></h3>
+	  <p align="center" style="margin-bottom: 0;"><img src="images/stereo.jpg" width="600" height="319" align="middle" /></p>
+	  <p class="style1" style="margin-top: 0;">Stereovision is another important intraoperative imaging technique that captures a texture intensity-encoded profile of the exposed cortical surface during surgery. Fig. 5 illustrates the use of stereovision technique to reconstruct the exposed cortical surface and correlate with co-registered pMR images, which clearly demonstrate dynamic evolution of the cortical surface during the course of surgery. </p>
+	  <p class="style2">Fig. 5.  Illustration of stereovision surface reconstruction: rectified left (a) and right (b) camera images after dural opening, which limit the search for correspondence points along a horizontal line. The reconstructed 3D cortical surface is shown in pMR image space (c). Cross-sections of a representative pMR axial image with respect to the reconstructed cortical surfaces (tumor cavity wall not included) are shown for four distinct surgical stages: (0) before dural opening; (1) after dural opening; (2) right before the start of tumor resection; and (3) after tumor resection. </p>
+	  <h2 align="center">Illustration of Model-estimated Brain Deformation </h2>
+	  <p style="margin-bottom: 0;">&nbsp;</p>
+	  <p class="style1" style="margin-top: 0;">The goal of estimating intraoperative brain deformation is to generate uMR that incorporates sparse displacements measured intraoperatively in order to allow subsequent neuronavigation. We illustrate the types of uMR images that can be generated using the techniques presented in this chapter through a typical clinical case. This patient was a 56-year-old male undergoing malignant glioma tumor re-section. Both 3D iUS and iSV images were acquired at five temporally distinctive surgical stages (i.e., before and after dural opening, and in the beginning, middle, and at the end of tumor resection). For each surgical stage after dural opening, uMR was generated and compared with iUS and iSV for consistency in paren-chymal feature alignment (Fig. 6).</p>
+	  <p align="center" class="style1"><img src="images/mebd.jpg" width="500" height="301" /></p>
+	  <p class="style2">Fig. 6. Representative axial and coronal uMR images after dural opening (left), in the beginning (~10% into resection; second column), middle (~50% into resection; third column), and at the end of resection (right), overlaid with corresponding cross-sections generated from reconstructed iSV surfaces (yellow line). Axial images are also overlaid with iUS (green). The alignments be-tween iUS, iSV, and uMR with parenchymal features indicate consistency between model esti-mates and intraoperative measurements. </p>
+	  <h2 align="center">Summary and Conclusions </h2>
+	  <p class="style1">Biomechanical models provide estimates of whole-brain deformation and are im-portant complements to intraoperative imaging for brain shift compensation in im-age-guided neurosurgery. Here, we have briefly illustrated important aspects of a brain shift compensation strategy based on inverse biomechanical modeling. The clinical feasibility of this brain shift compensation strategy depends on its compu-tational efficiency and its clinical utility relies on its updating accuracy. Ulti-mately, validation is necessary to ensure the accuracy of the estimated intraopera-tive brain deformation. In practice, data derived from both iUS and iSV can be utilized in order to maximize estimation accuracy deep in the brain as well as on the cortical surface. To validate model-estimated brain deformation, iFI may offer additional verification once tumor is in view. Because currently fluorescence is only available from the tumor surface, model-based image-guidance may play a more important role in the early stages of tumor resection (e.g., before tumor is exposed), while iFI may provide the best form of guidance once tumor is exposed. </p>
+	  <p style="margin-bottom: 0;"><br />
+      </p>
+  </div>
+	</div>
+
+
+<div id="footer">
+	<div style="float:left;">
+		&copy; 2011 Trustees of Dartmouth College
+     	<br />
+		<a href="http://engineering.dartmouth.edu/about/directions.html">Maps &amp; Directions</a>	</div>
+	<div style="float:right;text-align:right;">
+		<b>Thayer School of Engineering at Dartmouth</b><br />
+		8000 Cummings Hall, Hanover, NH 03755-8000<br />
+		Phone: 603-646-2230, Fax: 603-646-3856	</div>
+</div>
+</body>
+</html>
